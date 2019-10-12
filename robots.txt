@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: jojoasd123.github.io/sitemap.xml
+Sitemap: sitemap.xml

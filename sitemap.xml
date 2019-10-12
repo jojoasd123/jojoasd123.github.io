@@ -1,57 +1,57 @@
-<?xml-stylesheet type="text/xsl" href="jojoasd123.github.io/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>jojoasd123.github.io/</loc>
+    <loc>/</loc>
     <lastmod>2019-10-12T10:07:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>jojoasd123.github.io/post/first/</loc>
+    <loc>/post/first/</loc>
     <lastmod>2019-10-12T10:07:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>jojoasd123.github.io/post/</loc>
+    <loc>/post/</loc>
     <lastmod>2019-10-12T10:07:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>jojoasd123.github.io/categories/</loc>
+    <loc>/categories/</loc>
     <lastmod>2019-09-27T11:57:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>jojoasd123.github.io/tags/java/</loc>
+    <loc>/tags/java/</loc>
     <lastmod>2019-09-27T11:57:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>jojoasd123.github.io/categories/java/</loc>
+    <loc>/categories/java/</loc>
     <lastmod>2019-09-27T11:57:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>jojoasd123.github.io/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2019-09-27T11:57:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>jojoasd123.github.io/post/abstract-class/</loc>
+    <loc>/post/abstract-class/</loc>
     <lastmod>2019-09-27T11:57:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
