@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>抽象类和接口的区别 - Even - A super concise theme for Hugo</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Bruce" /><meta name="description" content="" /><meta name="keywords" content="abstract class and interface" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.58.3 with theme even" />
+
+
+<link rel="canonical" href="https://github.com/jojoasd123/jojoasd123.github.io/post/abstract-class/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/jojoasd123/jojoasd123.github.io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/jojoasd123/jojoasd123.github.io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/jojoasd123/jojoasd123.github.io/favicon-16x16.png">
+<link rel="manifest" href="/jojoasd123/jojoasd123.github.io/manifest.json">
+<link rel="mask-icon" href="/jojoasd123/jojoasd123.github.io/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<link href="/jojoasd123/jojoasd123.github.io/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="抽象类和接口的区别" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://github.com/jojoasd123/jojoasd123.github.io/post/abstract-class/" />
+<meta property="article:published_time" content="2019-09-27T11:57:54+08:00" />
+<meta property="article:modified_time" content="2019-09-27T11:57:54+08:00" />
+<meta itemprop="name" content="抽象类和接口的区别">
+<meta itemprop="description" content="">
+
+
+<meta itemprop="datePublished" content="2019-09-27T11:57:54&#43;08:00" />
+<meta itemprop="dateModified" content="2019-09-27T11:57:54&#43;08:00" />
+<meta itemprop="wordCount" content="646">
+
+
+
+<meta itemprop="keywords" content="Java," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="抽象类和接口的区别"/>
+<meta name="twitter:description" content=""/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/jojoasd123/jojoasd123.github.io/" class="logo">Even</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/jojoasd123/jojoasd123.github.io/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/jojoasd123/jojoasd123.github.io/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/jojoasd123/jojoasd123.github.io/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/jojoasd123/jojoasd123.github.io/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/jojoasd123/jojoasd123.github.io/" class="logo">Even</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/jojoasd123/jojoasd123.github.io/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/jojoasd123/jojoasd123.github.io/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/jojoasd123/jojoasd123.github.io/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/jojoasd123/jojoasd123.github.io/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">抽象类和接口的区别</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-09-27 </span>
+        <div class="post-category">
+            <a href="/jojoasd123/jojoasd123.github.io/categories/java/"> Java </a>
+            </div>
+          <span class="more-meta"> 646 words </span>
+          <span class="more-meta"> 2 mins read </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/jojoasd123/jojoasd123.github.io/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
+      </div>
+    </header>
+
+    
+    <div class="post-content">
+      <h1 id="抽象类-abstract-class">抽象类（abstract class）：</h1>
+
+<p>使用abstract修饰符修饰的类。官方点的定义就是：如果一个类没有包含足够多的信息来描述一个具体的对象，这样的类就是抽象类。</p>
+
+<p>实际点来说，一个抽象类不能实例化，因为“没有包含足够多的信息来描述一个具体的对象”。但终归属于类，所以仍然拥有普通类一样的定义。依然可以在类的实体（直白点就是能在｛｝里面)定义成员变量，成员方法，构造方法等。</p>
+
+<h1 id="接口-interface">接口（interface）：</h1>
+
+<p>官方定义：接口在java中是一个抽象类型，是抽象方法的集合。一个类通过继承接口的方式，从而继承接口的抽象方法。</p>
+
+<p>从定义上看，接口是个集合，并不是类。类描述了属性和方法，而接口只包含方法（未实现的方法）。接口和抽象类一样不能被实例化，因为不是类。但是接口可以被实现（使用 implements 关键字）。实现某个接口的类必须在类中实现该接口的全部方法。虽然接口内的方法都是抽象的（和抽象方法很像，没有实现）但是不需要abstract关键字。</p>
+
+<p>接口中没有构造方式（因为接口不是类）</p>
+
+<p>接口中的方法必须是抽象的（不能实现）</p>
+
+<p>接口中除了static、final变量，不能有其他变量</p>
+
+<p>接口支持多继承（一个类可以实现多个接口）</p>
+
+<h1 id="抽象类和接口的区别">抽象类和接口的区别：</h1>
+
+<ol>
+<li>抽象类里面的方法可以有实现, 接口不能有实现.</li>
+<li>抽象类有构造函数,接口没有</li>
+<li>抽象方法可以有public,protected 和default这些修饰符. 接口只有public.</li>
+</ol>
+
+<p>抽象类可以有默认实现.  如果抽象类的方法没有被子类全部继承,子类也必须声明成抽象类.</p>
+
+<p>接口没有默认实现. 接口的方法必须被全部实现.</p>
+    </div>
+
+    
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/jojoasd123/jojoasd123.github.io/tags/java/">Java</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/jojoasd123/jojoasd123.github.io/post/first/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">First</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:nekobible@outlook.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/jojoasd123" class="iconfont icon-github" title="github"></a>
+      <a href="https://gitlab.com/jojoasd123" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="https://space.bilibili.com/456660" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://github.com/jojoasd123/jojoasd123.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> site pv: <span id="busuanzi_value_site_pv"><img src="/jojoasd123/jojoasd123.github.io/img/spinner.svg" alt="spinner.svg"/></span> </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> site uv: <span id="busuanzi_value_site_uv"><img src="/jojoasd123/jojoasd123.github.io/img/spinner.svg" alt="spinner.svg"/></span> </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2019
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Bruce</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/jojoasd123/jojoasd123.github.io/dist/even.26188efa.min.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
